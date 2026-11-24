@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<!-- Monstrous: stitch lines and lightning only. No flat-topped head, no neck bolts. -->
+<g id="head-front"><path d="M-16 6 L16 -2 M-11 0 l2 9 M-3 -2 l2 9 M5 -4 l2 9 M12 -6 l2 9"/></g>
+<g id="shoulders-front"><path d="M-22 14 L18 30 M-16 12 l-3 9 M-7 16 l-3 9 M2 19 l-3 9 M11 23 l-3 9"/></g>
+<g id="head-spark"><path d="M34 -40 l-12 20 h10 l-8 18 l22 -26 h-11 l8 -12 Z M-44 -30 l-8 14 h7 l-5 12 l15 -18 h-8 l5 -8 Z"/></g>
+</svg>

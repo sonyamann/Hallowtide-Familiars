@@ -1,0 +1,145 @@
+{
+  "slug": "toad",
+  "name": "Toad",
+  "genus": "Bufo",
+  "signals": [
+    {
+      "measure": "bestVsTypicalGap.ratio",
+      "direction": "high"
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "toad.verdict.1",
+      "text": "It sitteth plainly in the mud a twelvemonth, and then is found to have a jewel in its head."
+    },
+    {
+      "id": "toad.verdict.2",
+      "text": "Most days it croaketh as any toad; but on a rare day the whole pond falleth silent to hear."
+    },
+    {
+      "id": "toad.verdict.3",
+      "text": "Judge it not by its common hours. The jewel is real."
+    },
+    {
+      "id": "toad.verdict.ghost",
+      "text": "It sitteth so still that it is taken for a stone, jewel and all.",
+      "variant": "ghost"
+    },
+    {
+      "id": "toad.verdict.vampire",
+      "text": "Its jewel it keepeth at home; its appetite it taketh abroad.",
+      "variant": "vampire"
+    },
+    {
+      "id": "toad.verdict.monstrous",
+      "text": "The jewel is its own. The setting it hath assembled from whatever came to hand.",
+      "variant": "monstrous"
+    }
+  ],
+  "natures": [
+    {
+      "id": "toad.nature.general.1",
+      "text": "The jewel in its head is called the toadstone, and is proof against poison. It will not say how it came by it.",
+      "when": []
+    },
+    {
+      "id": "toad.nature.general.2",
+      "text": "It hath been called ugly by poets, who are not themselves much to look at.",
+      "when": []
+    },
+    {
+      "id": "toad.nature.general.3",
+      "text": "It regardeth the Moth's nightly errands with pity, and the Spider's industry with alarm.",
+      "when": []
+    },
+    {
+      "id": "toad.nature.jewel",
+      "text": "Among its many common utterances there lieth one that all the country came to see.",
+      "when": [
+        {
+          "measure": "bestVsTypicalGap.ratio",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "toad.nature.jewel-most",
+      "text": "The distance between its common day and its best is greater than in almost any creature known.",
+      "when": [
+        {
+          "measure": "bestVsTypicalGap.ratio",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "toad.nature.steady",
+      "text": "It croaketh at an even measure, wet or dry.",
+      "when": [
+        {
+          "measure": "humour.phlegmatic.dailyVariation",
+          "direction": "low",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "toad.nature.brief",
+      "text": "Its sayings are short, as befitteth a creature with no neck.",
+      "when": [
+        {
+          "measure": "humour.melancholic.averageLength",
+          "direction": "low",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "toad.nature.buried",
+      "text": "It burieth itself in the mud for long seasons, and is presumed lost, but is not.",
+      "when": [
+        {
+          "measure": "silences.longestGapHours",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    }
+  ],
+  "gender": "m",
+  "art": {
+    "file": "toad.svg",
+    "anchors": {
+      "head": [
+        84,
+        112
+      ],
+      "shoulders": [
+        118,
+        128
+      ],
+      "mouth": [
+        72,
+        141
+      ]
+    },
+    "propScale": 0.95,
+    "pictures": {
+      "ghost": {
+        "image": "pictures/toad-ghost-image.jpg",
+        "cut": "pictures/toad-ghost-cut.png"
+      },
+      "vampire": {
+        "image": "pictures/toad-vampire-image.jpg",
+        "cut": "pictures/toad-vampire-cut.png"
+      },
+      "monstrous": {
+        "image": "pictures/toad-monstrous-image.jpg",
+        "cut": "pictures/toad-monstrous-cut.png"
+      }
+    }
+  }
+}

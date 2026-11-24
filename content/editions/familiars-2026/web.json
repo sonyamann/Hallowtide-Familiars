@@ -1,0 +1,42 @@
+{
+  "siteName": "Hallowtide Familiars",
+  "studioName": "Supposedly Studio",
+  "footer": "A Bestiary of Familiars · Hallowtide MMXXVI",
+  "form": {
+    "heading": "What manner of creature art thou?",
+    "intro": "Name an account on X. The scribes shall observe it, and set down what familiar it is.",
+    "label": "X handle",
+    "placeholder": "@handle",
+    "button": "Consult the scribes"
+  },
+  "loading": {
+    "heading": "The scribes are observing @{handle}",
+    "line": "This taketh a short while. The page shall turn of its own accord."
+  },
+  "result": {
+    "heading": "@{handle} is entered in the Bestiary",
+    "diagnosis": "The diagnosis",
+    "scorecard": "The scorecard",
+    "download": "Download",
+    "again": "Name another creature"
+  },
+  "newsletter": {
+    "title": "The scribes' correspondence",
+    "text": "Sonya's occasional newsletter.",
+    "label": "Email address",
+    "placeholder": "you@example.com",
+    "button": "Subscribe",
+    "done": "Soon the scribes shall write.",
+    "invalid": "That doesn't look like an email address.",
+    "failed": "The scribes dropped your address. Try again in a moment."
+  },
+  "errors": {
+    "invalid_handle": "That is no handle the scribes can read. Try a name such as @sonyasupposedly.",
+    "opted_out": "This creature hath asked not to be recorded, and the scribes honour it.",
+    "no_specimen": "The scribes found nothing to observe. The account may be private, empty, or not there at all.",
+    "too_many": "The scribes' quills grow weary. Wait an hour, then name another creature.",
+    "resting": "The scribes have observed all the creatures they can for one day. Return on the morrow.",
+    "failed": "The scribes' instruments failed them. Try again in a little while.",
+    "not_found": "No such page is kept in this Bestiary."
+  }
+}

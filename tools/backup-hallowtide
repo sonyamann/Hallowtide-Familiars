@@ -1,0 +1,9 @@
+#!/bin/sh
+# Nightly copy of the app's database (a consistent snapshot, safe while the
+# app runs). Keeps the last 14. Installed at /usr/local/bin/backup-hallowtide,
+# run from /etc/cron.d/backup-hallowtide. See HOSTING.md (private).
+set -eu
+out=/srv/backups/hallowtide-$(date -u +%F).db
+sqlite3 /srv/hallowtide/app/data/bestiary.db ".backup $out"
+gzip -f "$out"
+ls -1t /srv/backups/hallowtide-*.db.gz | tail -n +15 | xargs -r rm --

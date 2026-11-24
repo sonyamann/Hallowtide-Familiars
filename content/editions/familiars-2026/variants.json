@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "ghost",
+    "name": "Ghost",
+    "epithet": "spectralis",
+    "combine": "max",
+    "signals": [
+      {
+        "measure": "seenNotHeard.engagementPerView",
+        "direction": "low"
+      },
+      {
+        "measure": "silences.longestGapHours",
+        "direction": "high"
+      }
+    ],
+    "treatment": "dots",
+    "palette": "ghost-light"
+  },
+  {
+    "slug": "vampire",
+    "name": "Vampire",
+    "epithet": "sanguisuga",
+    "signals": [
+      {
+        "measure": "appetite.score",
+        "direction": "high"
+      }
+    ],
+    "props": "vampire.svg",
+    "palette": "blood-moon"
+  },
+  {
+    "slug": "monstrous",
+    "name": "Monstrous",
+    "epithet": {
+      "f": "consuta",
+      "m": "consutus",
+      "n": "consutum"
+    },
+    "signals": [
+      {
+        "measure": "assemblage.share",
+        "direction": "high"
+      }
+    ],
+    "props": "monstrous.svg",
+    "palette": "witchs-brew"
+  }
+]

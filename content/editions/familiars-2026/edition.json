@@ -1,0 +1,71 @@
+{
+  "id": "familiars-2026",
+  "name": "Familiars Edition",
+  "mark": "Hallowtide MMXXVI",
+  "thin": {
+    "minTweets": 30,
+    "minEligibleSpecies": 4
+  },
+  "replier": {
+    "maxOriginals": 14,
+    "minReplyShare": 0.7
+  },
+  "inks": [
+    {
+      "id": "jack-o-lantern",
+      "paper": "#15110E",
+      "fill": "#F3532A",
+      "key": "#F7E9CC",
+      "accent": "#63B56F"
+    },
+    {
+      "id": "witching-hour",
+      "paper": "#1A0F26",
+      "fill": "#FC632D",
+      "key": "#F5E8D3",
+      "accent": "#8A66C4"
+    },
+    {
+      "id": "witchs-brew",
+      "paper": "#120F1C",
+      "fill": "#A074D4",
+      "key": "#EFE9F7",
+      "accent": "#B5D653"
+    },
+    {
+      "id": "blood-moon",
+      "paper": "#170B0F",
+      "fill": "#F5391F",
+      "key": "#F5E8D3",
+      "accent": "#F08A3C"
+    },
+    {
+      "id": "ghost-light",
+      "paper": "#0E1513",
+      "fill": "#F1C08C",
+      "key": "#F4EBD6",
+      "accent": "#A8C2A0"
+    }
+  ],
+  "diet": {
+    "terms": 4,
+    "minEnglishShare": 0.5
+  },
+  "paper": "#F3EEE3",
+  "headings": {
+    "humours": "Of Its Humours",
+    "natures": "Of Its Natures",
+    "habitat": "Habitat",
+    "generosity": "Generosity",
+    "diet": "Diet",
+    "call": "Call"
+  },
+  "faces": {
+    "black": "wondertype-regular.ttf",
+    "serif": "toren-proportional.ttf",
+    "serifItalic": "toren-rotalic.ttf",
+    "mono": "fifteentwenty-demi.ttf",
+    "monoBold": "fifteentwenty-bold.ttf",
+    "typed": "toren-mono.ttf"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "slug": "owl",
+  "name": "Owl",
+  "genus": "Strix",
+  "signals": [
+    {
+      "measure": "likesGivenPerPost.ratio",
+      "direction": "high"
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "owl.verdict.1",
+      "text": "All is surveyed from its perch. The Owl marketh what is pleasing, but sayeth little."
+    },
+    {
+      "id": "owl.verdict.2",
+      "text": "For every word it uttereth, it hath nodded at a dozen of another's."
+    },
+    {
+      "id": "owl.verdict.3",
+      "text": "Nothing passeth beneath its branch unregarded."
+    },
+    {
+      "id": "owl.verdict.ghost",
+      "text": "It flieth without sound, and is known only by what it hath looked upon.",
+      "variant": "ghost"
+    },
+    {
+      "id": "owl.verdict.vampire",
+      "text": "It shall watch long from the branch before it descendeth upon the conversation.",
+      "variant": "vampire"
+    },
+    {
+      "id": "owl.verdict.monstrous",
+      "text": "Its nest is lined with all it hath seen and carried home.",
+      "variant": "monstrous"
+    }
+  ],
+  "natures": [
+    {
+      "id": "owl.nature.general.1",
+      "text": "It turneth its head full round, that nothing behind it may go unwitnessed.",
+      "when": []
+    },
+    {
+      "id": "owl.nature.general.2",
+      "text": "It is held to be wise, chiefly because it is quiet. The Owl offereth no correction.",
+      "when": []
+    },
+    {
+      "id": "owl.nature.general.3",
+      "text": "It saw what the Cat did, and will say nothing. Such is the understanding between them.",
+      "when": []
+    },
+    {
+      "id": "owl.nature.approves",
+      "text": "It bestoweth its approval far oftener than its speech.",
+      "when": [
+        {
+          "measure": "likesGivenPerPost.ratio",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "owl.nature.approves-most",
+      "text": "Its regard falleth upon the just and the unjust alike, and upon a great many in between.",
+      "when": [
+        {
+          "measure": "likesGivenPerPost.ratio",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "owl.nature.seldom",
+      "text": "It hooteth seldom, so listen well.",
+      "when": [
+        {
+          "measure": "humour.phlegmatic.postsPerDay",
+          "direction": "low",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "owl.nature.who",
+      "text": "It hath but one cry, and that a question put to everyone: who?",
+      "when": [
+        {
+          "measure": "questionRate.share",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "owl.nature.observes",
+      "text": "It answereth few, preferring to observe how the matter falleth out.",
+      "when": [
+        {
+          "measure": "aloofness.replyShare",
+          "direction": "low",
+          "minPercentile": 75
+        }
+      ]
+    }
+  ],
+  "gender": "f",
+  "art": {
+    "file": "owl.svg",
+    "anchors": {
+      "head": [
+        120,
+        50
+      ],
+      "shoulders": [
+        120,
+        112
+      ],
+      "mouth": [
+        120,
+        105
+      ]
+    },
+    "propScale": 1.0,
+    "pictures": {
+      "ghost": {
+        "image": "pictures/owl-ghost-image.jpg",
+        "cut": "pictures/owl-ghost-cut.png"
+      },
+      "vampire": {
+        "image": "pictures/owl-vampire-image.jpg",
+        "cut": "pictures/owl-vampire-cut.png"
+      },
+      "monstrous": {
+        "image": "pictures/owl-monstrous-image.jpg",
+        "cut": "pictures/owl-monstrous-cut.png"
+      }
+    }
+  }
+}

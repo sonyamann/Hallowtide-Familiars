@@ -1,0 +1,60 @@
+{
+  "model": "jev-1.13.0",
+  "blockAt": 0.35,
+  "call": {
+    "minLength": 40,
+    "maxLength": 220,
+    "candidates": 16,
+    "minKeptAfterCleaning": 0.9
+  },
+  "diet": {
+    "candidates": 16
+  },
+  "tweetQuestions": {
+    "distress": {
+      "instructions": "Is this post about grief, a death, serious illness, self-harm, abuse, or another deeply painful personal event?",
+      "true": "It describes or reacts to a painful event of that kind, the author's own or someone else's.",
+      "false": "It does not, or it mentions such things only as a passing joke, figure of speech or abstract topic.",
+      "blockAt": 0.2
+    },
+    "downcast": {
+      "instructions": "Is the author of this post feeling low, or reporting something that went badly for them? For example: sadness, disappointment, shame, loneliness, worry, a failure or rejection, a bad day, or putting themselves down, including about their own body or abilities.",
+      "true": "The author is unhappy, has had a setback, or is running themselves down, even if they say it lightly.",
+      "false": "The author is not unhappy about their own life. Jokes, opinions, observations, enthusiasm, mild boredom and complaints about the wider world do not count."
+    },
+    "hostile": {
+      "instructions": "Does this post contain a slur, harassment, a threat, or an insult aimed at a person or a group of people?",
+      "true": "It attacks, demeans or threatens a person or group, or uses a slur.",
+      "false": "It attacks no one. Criticism of ideas, products or institutions, and mild self-deprecation, do not count."
+    },
+    "someone_in_their_life": {
+      "instructions": "Is this post about a specific real person in the author's own life, such as a family member, partner, child, friend, boss, coworker, teacher, neighbour or acquaintance, whether or not they are named? Or does it reveal anyone's contact details or address?",
+      "true": "It talks about such a person, or reveals such details.",
+      "false": "It is only about the author, about people in general, or about public figures, fictional characters, companies and products."
+    },
+    "adult": {
+      "instructions": "Is this post about sex, nudity, drug use or drunkenness, or does it use crude sexual language?",
+      "true": "Sex, nudity, drugs or intoxication are a subject of the post, or it uses crude sexual words.",
+      "false": "None of those appear, or only as an innocent everyday mention such as having a coffee or a glass of wine with dinner."
+    }
+  },
+  "termQuestions": {
+    "sensitive_subject": {
+      "instructions": "The state is a single word or short phrase that would be printed on a public card describing a person. Does it point to a sensitive subject: sex, drugs or alcohol, physical or mental health, death, violence, crime, or an insult?",
+      "true": "A reader would connect it to one of those subjects.",
+      "false": "It is an ordinary word with no such association."
+    },
+    "identity_or_politics": {
+      "instructions": "The state is a single word or short phrase that would be printed on a public card describing a person. Does it name a religion, ethnicity, nationality, sexuality, gender identity, political party, politician or contested political cause?",
+      "true": "It names one of those.",
+      "false": "It does not."
+    }
+  },
+  "dietQuestions": {
+    "not_a_noun": {
+      "instructions": "The state is a single word or short phrase. Is it something other than a noun? A noun names a thing, a creature, a person, a place, a substance or an idea.",
+      "true": "It is a verb, adjective, adverb, pronoun, interjection or other non-noun, or it is mainly used as one.",
+      "false": "It is a noun, or a phrase naming a thing, including plurals and proper names."
+    }
+  }
+}

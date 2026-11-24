@@ -1,0 +1,149 @@
+{
+  "slug": "spider",
+  "name": "Spider",
+  "genus": "Aranea",
+  "signals": [
+    {
+      "measure": "selfThreadShare.share",
+      "direction": "high"
+    },
+    {
+      "measure": "linkShare.share",
+      "direction": "high"
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "spider.verdict.1",
+      "text": "It sayeth nothing in one strand that may be spun into seven."
+    },
+    {
+      "id": "spider.verdict.2",
+      "text": "What it catcheth, it keepeth, and bindeth fast to what it caught before."
+    },
+    {
+      "id": "spider.verdict.3",
+      "text": "Its web is its argument, and it hath not finished."
+    },
+    {
+      "id": "spider.verdict.ghost",
+      "text": "It spinneth in an empty room, and the web is no worse for that.",
+      "variant": "ghost"
+    },
+    {
+      "id": "spider.verdict.vampire",
+      "text": "It maketh every line fast to somebody else, and so is never without company.",
+      "variant": "vampire"
+    },
+    {
+      "id": "spider.verdict.monstrous",
+      "text": "Its web is hung with other creatures' treasures, each bound into place with care.",
+      "variant": "monstrous"
+    }
+  ],
+  "natures": [
+    {
+      "id": "spider.nature.threads",
+      "text": "Having said a thing, it descendeth a little and sayeth the next, and so by degrees reacheth the floor.",
+      "when": [
+        {
+          "measure": "selfThreadShare.share",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "spider.nature.threads-most",
+      "text": "It hath never once been content with a single strand.",
+      "when": [
+        {
+          "measure": "selfThreadShare.share",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "spider.nature.links",
+      "text": "It runneth lines to distant places, and whatsoever is far off, it bringeth near.",
+      "when": [
+        {
+          "measure": "linkShare.share",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "spider.nature.links-most",
+      "text": "No corner of the world is so remote that it hath not made a line fast to it.",
+      "when": [
+        {
+          "measure": "linkShare.share",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "spider.nature.length",
+      "text": "It measureth its sayings by the yard, and not the inch.",
+      "when": [
+        {
+          "measure": "humour.melancholic.averageLength",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "spider.nature.general.1",
+      "text": "It is patient beyond the custom of the age, and will finish what it began though none remain to watch.",
+      "when": []
+    },
+    {
+      "id": "spider.nature.general.2",
+      "text": "Its work is swept away by morning, and it beginneth again without complaint.",
+      "when": []
+    },
+    {
+      "id": "spider.nature.general.3",
+      "text": "It denieth having said anything about the Moth.",
+      "when": []
+    }
+  ],
+  "gender": "f",
+  "art": {
+    "file": "spider.svg",
+    "anchors": {
+      "head": [
+        120,
+        78
+      ],
+      "shoulders": [
+        120,
+        110
+      ],
+      "mouth": [
+        120,
+        113
+      ]
+    },
+    "propScale": 0.8,
+    "pictures": {
+      "ghost": {
+        "image": "pictures/spider-ghost-image.jpg",
+        "cut": "pictures/spider-ghost-cut.png"
+      },
+      "vampire": {
+        "image": "pictures/spider-vampire-image.jpg",
+        "cut": "pictures/spider-vampire-cut.png"
+      },
+      "monstrous": {
+        "image": "pictures/spider-monstrous-image.jpg",
+        "cut": "pictures/spider-monstrous-cut.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "black-cat",
+  "name": "Black Cat",
+  "genus": "Felis",
+  "signals": [],
+  "route": "thin",
+  "variants": false,
+  "epithet": "taciturna",
+  "verdicts": [
+    {
+      "id": "black-cat.verdict.1",
+      "text": "It hath been watched a long while, and hath given nothing away."
+    },
+    {
+      "id": "black-cat.verdict.2",
+      "text": "The scribes set out ink and parchment, and it sat upon the parchment."
+    },
+    {
+      "id": "black-cat.verdict.3",
+      "text": "It keepeth its own counsel, and its counsel keepeth it."
+    },
+    {
+      "id": "black-cat.verdict.4",
+      "text": "What it knoweth, it knoweth; and what it thinketh of thee, it will not say."
+    },
+    {
+      "id": "black-cat.verdict.5",
+      "text": "It was seen once at a window, and the matter hath been discussed ever since."
+    }
+  ],
+  "natures": [
+    {
+      "id": "black-cat.nature.general.1",
+      "text": "It is not that it hath nothing to say. Thou hast not earned it.",
+      "when": []
+    },
+    {
+      "id": "black-cat.nature.general.2",
+      "text": "Of the hours the Cat spendeth watching, no record is kept, for it leaveth none.",
+      "when": []
+    },
+    {
+      "id": "black-cat.nature.general.3",
+      "text": "It cometh when it pleaseth, not when it is called. No longer do the scribes call.",
+      "when": []
+    },
+    {
+      "id": "black-cat.nature.general.4",
+      "text": "The Owl is said to see everything. The Cat seeth as much, and maketh less of it.",
+      "when": []
+    },
+    {
+      "id": "black-cat.nature.general.5",
+      "text": "Nine lives are attributed to it. The Cat hath shewn us but part of one.",
+      "when": []
+    },
+    {
+      "id": "black-cat.nature.approves",
+      "text": "Though it speaketh little, it is free with its regard, and many a creature hath felt its approval without once hearing its voice.",
+      "when": [
+        {
+          "measure": "likesGivenPerPost.ratio",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "black-cat.nature.withholds",
+      "text": "It neither speaketh nor applaudeth, but only watcheth, which is the oldest of the arts.",
+      "when": [
+        {
+          "measure": "likesGivenPerPost.ratio",
+          "direction": "low",
+          "minPercentile": 75
+        }
+      ]
+    }
+  ],
+  "art": {
+    "file": "black-cat.svg",
+    "layers": {
+      "image": "pictures/black-cat-image.jpg",
+      "cut": "pictures/black-cat-cut.png"
+    }
+  },
+  "palette": "jack-o-lantern"
+}

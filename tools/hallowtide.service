@@ -1,0 +1,24 @@
+# The app's systemd service on the studio Droplet, installed at
+# /etc/systemd/system/hallowtide.service. Matches Divination Diagnosis's,
+# including its sandboxing: only data/ is writable. See HOSTING.md (private).
+[Unit]
+Description=Hallowtide Familiars
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=hallowtide
+Group=hallowtide
+WorkingDirectory=/srv/hallowtide/app
+EnvironmentFile=/srv/hallowtide/env
+ExecStart=/usr/local/bin/node --disable-warning=ExperimentalWarning src/web/server.ts
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/srv/hallowtide/app/data
+
+[Install]
+WantedBy=multi-user.target

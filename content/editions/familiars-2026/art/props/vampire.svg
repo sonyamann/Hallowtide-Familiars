@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<!-- Vampire: a cape behind the shoulders and fangs at the mouth. Cape and fangs only: no widow's peak, no medallion. Each group is drawn around 0,0 and placed at the species' anchor. -->
+<g id="shoulders-back"><path d="M-10 -4 L-36 -46 L-42 -2 C-60 20 -66 44 -62 70 L-46 60 L-31 72 L-15 60 L0 72 L15 60 L31 72 L46 60 L62 70 C66 44 60 20 42 -2 L36 -46 L10 -4 Z"/></g>
+<g id="mouth-front"><path d="M-6 0 L-3.5 9 L-1 0 Z M1 0 L3.5 9 L6 0 Z" fill="PAPER"/></g>
+</svg>

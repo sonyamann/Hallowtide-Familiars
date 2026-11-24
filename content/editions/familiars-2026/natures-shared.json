@@ -1,0 +1,200 @@
+[
+  {
+    "id": "shared.phlegmatic-postsPerDay-high",
+    "text": "It is abroad daily and often, and the scribes have given up counting.",
+    "when": [
+      {
+        "measure": "humour.phlegmatic.postsPerDay",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.phlegmatic-postsPerDay-low",
+    "text": "It sheweth itself seldom, such that each appearance is noted keenly.",
+    "when": [
+      {
+        "measure": "humour.phlegmatic.postsPerDay",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.melancholic-longPostShare-high",
+    "text": "It will not say in a line what may be said in a page.",
+    "when": [
+      {
+        "measure": "humour.melancholic.longPostShare",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.melancholic-longPostShare-low",
+    "text": "It speaketh briefly, as one who payeth for parchment by the inch.",
+    "when": [
+      {
+        "measure": "humour.melancholic.longPostShare",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.linkShare-share-high",
+    "text": "It cometh always bearing something from elsewhere, and layeth it at the reader's door.",
+    "when": [
+      {
+        "measure": "linkShare.share",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.linkShare-share-low",
+    "text": "It carrieth nothing in from abroad; what it sayeth, it sayeth of itself.",
+    "when": [
+      {
+        "measure": "linkShare.share",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.selfThreadShare-share-high",
+    "text": "Having spoken, it speaketh again beneath, and again beneath that, until the thing is a ladder.",
+    "when": [
+      {
+        "measure": "selfThreadShare.share",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.selfThreadShare-share-low",
+    "text": "It sayeth a thing once, and leaveth this to stand or fall.",
+    "when": [
+      {
+        "measure": "selfThreadShare.share",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.questionRate-share-high",
+    "text": "It asketh more than it telleth, and leaveth the answering to others.",
+    "when": [
+      {
+        "measure": "questionRate.share",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.questionRate-share-low",
+    "text": "It asketh little, preferring to tell.",
+    "when": [
+      {
+        "measure": "questionRate.share",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.seenNotHeard-engagementPerView-high",
+    "text": "Of those who behold it, an uncommon number stop to pay their respects.",
+    "when": [
+      {
+        "measure": "seenNotHeard.engagementPerView",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.seenNotHeard-engagementPerView-low",
+    "text": "It is much beheld and little remarked upon, after the manner of cathedrals.",
+    "when": [
+      {
+        "measure": "seenNotHeard.engagementPerView",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.silences-longestGapHours-high",
+    "text": "It is given to long absences, from which it returneth without explanation.",
+    "when": [
+      {
+        "measure": "silences.longestGapHours",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.silences-longestGapHours-low",
+    "text": "It is never long from its post.",
+    "when": [
+      {
+        "measure": "silences.longestGapHours",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.choleric-quoteShare-high",
+    "text": "It is fond of holding up another's words and saying its piece beneath them.",
+    "when": [
+      {
+        "measure": "humour.choleric.quoteShare",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.choleric-quoteShare-low",
+    "text": "It quoteth no one, and standeth upon its own text.",
+    "when": [
+      {
+        "measure": "humour.choleric.quoteShare",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.likesGivenPerPost-ratio-high",
+    "text": "It is free with its approval, and leaveth a mark of favour wherever it passeth.",
+    "when": [
+      {
+        "measure": "likesGivenPerPost.ratio",
+        "direction": "high",
+        "minPercentile": 80
+      }
+    ]
+  },
+  {
+    "id": "shared.likesGivenPerPost-ratio-low",
+    "text": "It giveth its approval rarely, and so it is prized.",
+    "when": [
+      {
+        "measure": "likesGivenPerPost.ratio",
+        "direction": "low",
+        "minPercentile": 80
+      }
+    ]
+  }
+]

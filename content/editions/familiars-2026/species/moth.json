@@ -1,0 +1,146 @@
+{
+  "slug": "moth",
+  "name": "Moth",
+  "genus": "Phalaena",
+  "signals": [
+    {
+      "measure": "quotesUp.share",
+      "direction": "high"
+    }
+  ],
+  "route": "replier",
+  "verdicts": [
+    {
+      "id": "moth.verdict.1",
+      "text": "Where another hath lit a lamp, there shall this Moth be found before the hour is out."
+    },
+    {
+      "id": "moth.verdict.2",
+      "text": "It hath a candle of its own, and yet is ever found at its neighbour's."
+    },
+    {
+      "id": "moth.verdict.3",
+      "text": "Shew it a flame and it will not be reasoned with."
+    },
+    {
+      "id": "moth.verdict.ghost",
+      "text": "It circleth the lamp nightly yet casteth no shadow upon the wall.",
+      "variant": "ghost"
+    },
+    {
+      "id": "moth.verdict.vampire",
+      "text": "It cometh to the flame not for the light, but for the company gathered there.",
+      "variant": "vampire"
+    },
+    {
+      "id": "moth.verdict.monstrous",
+      "text": "Its wings are sewn of borrowed pages, and it flieth on them well enough.",
+      "variant": "monstrous"
+    }
+  ],
+  "natures": [
+    {
+      "id": "moth.nature.quotes-up",
+      "text": "Luminous silver gleameth in reflection from its wings.",
+      "when": [
+        {
+          "measure": "quotesUp.share",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "moth.nature.quotes-up-most",
+      "text": "It hath been seen circling the very greatest lights in the land.",
+      "when": [
+        {
+          "measure": "quotesUp.share",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "moth.nature.replies",
+      "text": "It is seldom found at home, forever flitting abroad.",
+      "when": [
+        {
+          "measure": "aloofness.replyShare",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "moth.nature.replies-most",
+      "text": "It hath answered more than it was ever asked.",
+      "when": [
+        {
+          "measure": "aloofness.replyShare",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "moth.nature.quotes",
+      "text": "It is fond of bearing another's words upon its wings, then discharging them with a flutter.",
+      "when": [
+        {
+          "measure": "humour.choleric.quoteShare",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "moth.nature.general.1",
+      "text": "It is most easily summoned. Simply ensure thy lamp is well-supplied with oil.",
+      "when": []
+    },
+    {
+      "id": "moth.nature.general.2",
+      "text": "It is not burned by the flame, whatever the scribes report, but only warmed, and returneth nightly.",
+      "when": []
+    },
+    {
+      "id": "moth.nature.general.3",
+      "text": "The ancients held that it eateth wool. This is a slander, put about by the Spider.",
+      "when": []
+    }
+  ],
+  "gender": "f",
+  "art": {
+    "file": "moth.svg",
+    "anchors": {
+      "head": [
+        120,
+        100
+      ],
+      "shoulders": [
+        120,
+        98
+      ],
+      "mouth": [
+        120,
+        90
+      ]
+    },
+    "propScale": 0.6,
+    "pictures": {
+      "ghost": {
+        "image": "pictures/moth-ghost-image.jpg",
+        "cut": "pictures/moth-ghost-cut.png"
+      },
+      "vampire": {
+        "image": "pictures/moth-vampire-image.jpg",
+        "cut": "pictures/moth-vampire-cut.png"
+      },
+      "monstrous": {
+        "image": "pictures/moth-monstrous-image.jpg",
+        "cut": "pictures/moth-monstrous-cut.png"
+      }
+    }
+  }
+}

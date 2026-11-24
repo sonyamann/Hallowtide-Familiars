@@ -1,0 +1,138 @@
+[
+  {
+    "id": "sanguine",
+    "name": "Sanguine",
+    "signals": [
+      {
+        "measure": "humour.sanguine.engagementPerOriginalPerFollower",
+        "direction": "high"
+      }
+    ],
+    "bands": [
+      {
+        "id": "sanguine.1",
+        "text": "Cool of blood. It seeketh no applause."
+      },
+      {
+        "id": "sanguine.2",
+        "text": "Temperate. Applause findeth it now and then."
+      },
+      {
+        "id": "sanguine.3",
+        "text": "Warm. It is well received."
+      },
+      {
+        "id": "sanguine.4",
+        "text": "Ruddy. Company doth gather to hear its speech."
+      },
+      {
+        "id": "sanguine.5",
+        "text": "Full-blooded. It cannot speak but the room attendeth."
+      }
+    ]
+  },
+  {
+    "id": "choleric",
+    "name": "Choleric",
+    "signals": [
+      {
+        "measure": "humour.choleric.replyShare",
+        "direction": "high"
+      },
+      {
+        "measure": "humour.choleric.quoteShare",
+        "direction": "high"
+      }
+    ],
+    "bands": [
+      {
+        "id": "choleric.1",
+        "text": "No bile to speak of. It letteth others be."
+      },
+      {
+        "id": "choleric.2",
+        "text": "A little heat, soon spent."
+      },
+      {
+        "id": "choleric.3",
+        "text": "Quick to answer."
+      },
+      {
+        "id": "choleric.4",
+        "text": "Hot. Few sayings may pass unanswered."
+      },
+      {
+        "id": "choleric.5",
+        "text": "All bile. It answereth everything, and some things twice."
+      }
+    ]
+  },
+  {
+    "id": "melancholic",
+    "name": "Melancholic",
+    "signals": [
+      {
+        "measure": "humour.melancholic.longPostShare",
+        "direction": "high"
+      },
+      {
+        "measure": "humour.melancholic.selfThreadShare",
+        "direction": "high"
+      }
+    ],
+    "bands": [
+      {
+        "id": "melancholic.1",
+        "text": "Light of heart, and brief of speech."
+      },
+      {
+        "id": "melancholic.2",
+        "text": "Occasionally given to expounding."
+      },
+      {
+        "id": "melancholic.3",
+        "text": "Pensive. It dwelleth on a matter."
+      },
+      {
+        "id": "melancholic.4",
+        "text": "Brooding. One saying shall seldom suffice."
+      },
+      {
+        "id": "melancholic.5",
+        "text": "Black bile entire. It writeth at length, and then appendeth."
+      }
+    ]
+  },
+  {
+    "id": "phlegmatic",
+    "name": "Phlegmatic",
+    "signals": [
+      {
+        "measure": "humour.phlegmatic.dailyVariation",
+        "direction": "low"
+      }
+    ],
+    "bands": [
+      {
+        "id": "phlegmatic.1",
+        "text": "Its cries pour forth in floods, then a drought."
+      },
+      {
+        "id": "phlegmatic.2",
+        "text": "Changeable as the weather."
+      },
+      {
+        "id": "phlegmatic.3",
+        "text": "Tolerably even."
+      },
+      {
+        "id": "phlegmatic.4",
+        "text": "Steady. It keepeth its rhythm."
+      },
+      {
+        "id": "phlegmatic.5",
+        "text": "Unmoved. It appeareth as doth the tide."
+      }
+    ]
+  }
+]

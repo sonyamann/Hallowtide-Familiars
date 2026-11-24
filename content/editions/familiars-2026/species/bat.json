@@ -1,0 +1,149 @@
+{
+  "slug": "bat",
+  "name": "Bat",
+  "genus": "Vespertilio",
+  "signals": [
+    {
+      "measure": "questionRate.share",
+      "direction": "high"
+    },
+    {
+      "measure": "repliesReceivedPerLike.ratio",
+      "direction": "high"
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "bat.verdict.1",
+      "text": "It crieth out into the dark, and steereth by what cometh back."
+    },
+    {
+      "id": "bat.verdict.2",
+      "text": "It asketh, and the night answereth. By this alone it shall find its way."
+    },
+    {
+      "id": "bat.verdict.3",
+      "text": "It knoweth the shape of every room by the questions it hath thrown at the walls."
+    },
+    {
+      "id": "bat.verdict.ghost",
+      "text": "It crieth into the dark and the echo is slow in coming; yet it flieth on, and striketh nothing.",
+      "variant": "ghost"
+    },
+    {
+      "id": "bat.verdict.vampire",
+      "text": "Of this one the common report is, for once, entirely true.",
+      "variant": "vampire"
+    },
+    {
+      "id": "bat.verdict.monstrous",
+      "text": "It is part mouse, part bird, and part borrowed umbrella. Yet the creature flieth.",
+      "variant": "monstrous"
+    }
+  ],
+  "natures": [
+    {
+      "id": "bat.nature.general.1",
+      "text": "It hangeth upside down, and from that vantage findeth the world's opinions no stranger than its own.",
+      "when": []
+    },
+    {
+      "id": "bat.nature.general.2",
+      "text": "It is blind only in the proverb. In truth it seeth well enough, and asketh anyway.",
+      "when": []
+    },
+    {
+      "id": "bat.nature.general.3",
+      "text": "The learned dispute whether it be bird or beast. When asked, the Bat answereth with a question.",
+      "when": []
+    },
+    {
+      "id": "bat.nature.asks",
+      "text": "A great part of its sayings end by turning upward, like its ears.",
+      "when": [
+        {
+          "measure": "questionRate.share",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "bat.nature.asks-most",
+      "text": "It hath asked more questions than the catechism.",
+      "when": [
+        {
+          "measure": "questionRate.share",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "bat.nature.answered",
+      "text": "Where others are nodded at, it is answered.",
+      "when": [
+        {
+          "measure": "repliesReceivedPerLike.ratio",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "bat.nature.answered-most",
+      "text": "It seldom crieth out but that a crowd of voices crieth back.",
+      "when": [
+        {
+          "measure": "repliesReceivedPerLike.ratio",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "bat.nature.calls",
+      "text": "It is forever calling some other creature by name into the dark.",
+      "when": [
+        {
+          "measure": "aloofness.mentionRate",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    }
+  ],
+  "gender": "m",
+  "art": {
+    "file": "bat.svg",
+    "anchors": {
+      "head": [
+        120,
+        70
+      ],
+      "shoulders": [
+        120,
+        104
+      ],
+      "mouth": [
+        120,
+        98
+      ]
+    },
+    "propScale": 0.7,
+    "pictures": {
+      "ghost": {
+        "image": "pictures/bat-ghost-image.jpg",
+        "cut": "pictures/bat-ghost-cut.png"
+      },
+      "vampire": {
+        "image": "pictures/bat-vampire-image.jpg",
+        "cut": "pictures/bat-vampire-cut.png"
+      },
+      "monstrous": {
+        "image": "pictures/bat-monstrous-image.jpg",
+        "cut": "pictures/bat-monstrous-cut.png"
+      }
+    }
+  }
+}

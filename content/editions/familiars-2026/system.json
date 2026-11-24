@@ -1,0 +1,123 @@
+{
+  "footer": "A Bestiary of Familiars · @sonyasupposedly",
+  "title": {
+    "withVariant": "Of the {variant} {species}",
+    "plain": "Of the {species}"
+  },
+  "handle": "@{handle}",
+  "rarity": {
+    "template": "{label} · {percent}% of specimens",
+    "bands": [
+      {
+        "id": "very-rare",
+        "upToPercent": 2,
+        "label": "Very rare"
+      },
+      {
+        "id": "rare",
+        "upToPercent": 5,
+        "label": "Rare"
+      },
+      {
+        "id": "uncommon",
+        "upToPercent": 10,
+        "label": "Uncommon"
+      },
+      {
+        "id": "common",
+        "upToPercent": 100,
+        "label": "Common"
+      }
+    ]
+  },
+  "habitat": {
+    "template": "{pace} since {year}.",
+    "pace": [
+      {
+        "id": "several-a-day",
+        "minPostsPerDay": 3,
+        "text": "Sighted many times daily"
+      },
+      {
+        "id": "daily",
+        "minPostsPerDay": 0.7,
+        "text": "Sighted daily"
+      },
+      {
+        "id": "weekly",
+        "minPostsPerDay": 0.1,
+        "text": "Sighted weekly"
+      },
+      {
+        "id": "monthly",
+        "minPostsPerDay": 0.0222,
+        "text": "Sighted once in a moon"
+      },
+      {
+        "id": "rarely",
+        "minPostsPerDay": 0,
+        "text": "Sighted once in a blue moon"
+      }
+    ]
+  },
+  "generosity": {
+    "measure": "likesGivenPerPost.ratio",
+    "bands": [
+      {
+        "id": "miserly",
+        "upToPercentile": 20,
+        "text": "A miserly familiar. It parteth with a favour as with a tooth."
+      },
+      {
+        "id": "sparing",
+        "upToPercentile": 40,
+        "text": "A sparing familiar."
+      },
+      {
+        "id": "even-handed",
+        "upToPercentile": 60,
+        "text": "An even-handed familiar."
+      },
+      {
+        "id": "open-handed",
+        "upToPercentile": 80,
+        "text": "An open-handed familiar."
+      },
+      {
+        "id": "generous",
+        "upToPercentile": 100,
+        "text": "A generous familiar. It scattereth favours as a sower doth seed."
+      }
+    ]
+  },
+  "humours": {
+    "scoreTemplate": "{numeral} of V",
+    "unmeasured": "The scribes approached with their instruments, and the Cat declined to be measured."
+  },
+  "evidence": {
+    "tiers": [
+      {
+        "id": "i",
+        "minTweets": 0,
+        "label": "Evidence tier: Glimpsed"
+      },
+      {
+        "id": "ii",
+        "minTweets": 60,
+        "label": "Evidence tier: Probable"
+      },
+      {
+        "id": "iii",
+        "minTweets": 150,
+        "label": "Evidence tier: Attested"
+      }
+    ],
+    "heavyPosterDays": 7
+  },
+  "observations": {
+    "heading": "Observations",
+    "diet": "It is known to feed upon:",
+    "callPost": "Its cry hath been set down thus:",
+    "callPhrase": "It is oft heard to say:"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "slug": "werewolf",
+  "name": "Werewolf",
+  "genus": "Lupus",
+  "signals": [
+    {
+      "measure": "originalsVsRepliesGap.lengthGap",
+      "direction": "high"
+    }
+  ],
+  "rare": {
+    "minScore": 93
+  },
+  "variants": false,
+  "epithet": "versipellis",
+  "verdicts": [
+    {
+      "id": "werewolf.verdict.1",
+      "text": "In its own house it discourseth at length. Abroad, it answereth in a syllable, and that a growl."
+    },
+    {
+      "id": "werewolf.verdict.2",
+      "text": "It is two creatures. They share one name and keep different company."
+    },
+    {
+      "id": "werewolf.verdict.3",
+      "text": "Its posts are sermons and its replies are bites."
+    },
+    {
+      "id": "werewolf.verdict.4",
+      "text": "It changeth its skin between the page and the margin."
+    },
+    {
+      "id": "werewolf.verdict.5",
+      "text": "Long in the telling, short in the answering. The learned call this lycanthropy."
+    }
+  ],
+  "natures": [
+    {
+      "id": "werewolf.nature.general.1",
+      "text": "It is entered here as rare, for few have seen the change and fewer have written it down.",
+      "when": []
+    },
+    {
+      "id": "werewolf.nature.general.2",
+      "text": "The moon hath nothing to do with it, whatever the villagers say.",
+      "when": []
+    },
+    {
+      "id": "werewolf.nature.general.3",
+      "text": "It hath no quarrel with the Goat, and wisheth this were better known.",
+      "when": []
+    },
+    {
+      "id": "werewolf.nature.gulf",
+      "text": "Between its long sayings and its short answers there lieth a gulf that few creatures keep.",
+      "when": [
+        {
+          "measure": "originalsVsRepliesGap.lengthGap",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "werewolf.nature.parchment",
+      "text": "It hath been known to exceed the bounds of the page, and to send for more parchment.",
+      "when": [
+        {
+          "measure": "humour.melancholic.longPostShare",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "werewolf.nature.chained",
+      "text": "One long saying doth not content it. It must chain several together.",
+      "when": [
+        {
+          "measure": "selfThreadShare.share",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "werewolf.nature.snaps",
+      "text": "It answereth often and briefly, as one snapping at flies.",
+      "when": [
+        {
+          "measure": "aloofness.replyShare",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "werewolf.nature.concluded",
+      "text": "It answereth seldom. When it doth, the matter is soon concluded.",
+      "when": [
+        {
+          "measure": "aloofness.replyShare",
+          "direction": "low",
+          "minPercentile": 75
+        }
+      ]
+    }
+  ],
+  "art": {
+    "file": "werewolf.svg",
+    "layers": {
+      "image": "pictures/werewolf-image.jpg",
+      "cut": "pictures/werewolf-cut.png"
+    }
+  },
+  "palette": "witching-hour"
+}

@@ -1,0 +1,145 @@
+{
+  "slug": "goat",
+  "name": "Goat",
+  "genus": "Capra",
+  "signals": [
+    {
+      "measure": "quotesReceivedPerLike.ratio",
+      "direction": "high"
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "goat.verdict.1",
+      "text": "Whatsoever it sayeth, the village carrieth off to argue over elsewhere."
+    },
+    {
+      "id": "goat.verdict.2",
+      "text": "It is sent into the wilderness weekly, and weekly returneth, chewing."
+    },
+    {
+      "id": "goat.verdict.3",
+      "text": "The crowd layeth its quarrels upon this beast. The beast is unperturbed."
+    },
+    {
+      "id": "goat.verdict.ghost",
+      "text": "It was driven out long ago, and is seen yet upon the hill at dusk. It sheweth no distress.",
+      "variant": "ghost"
+    },
+    {
+      "id": "goat.verdict.vampire",
+      "text": "It goeth not into the wilderness alone, but butteth into all company.",
+      "variant": "vampire"
+    },
+    {
+      "id": "goat.verdict.monstrous",
+      "text": "It will eat anything, and hath. What it hath eaten may be read in its coat.",
+      "variant": "monstrous"
+    }
+  ],
+  "natures": [
+    {
+      "id": "goat.nature.general.1",
+      "text": "It hath horns, and a beard, and opinions, and is ashamed of none of them.",
+      "when": []
+    },
+    {
+      "id": "goat.nature.general.2",
+      "text": "The sins laid upon it are chiefly other people's. It hath a few of its own, of which it is fond.",
+      "when": []
+    },
+    {
+      "id": "goat.nature.general.3",
+      "text": "It hath eaten the Spider's web twice, and found it wanting salt.",
+      "when": []
+    },
+    {
+      "id": "goat.nature.carried-off",
+      "text": "Its sayings are seldom left where it set them down.",
+      "when": [
+        {
+          "measure": "quotesReceivedPerLike.ratio",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "goat.nature.carried-off-most",
+      "text": "Every bleat is borne away and repeated for dispute in another parish.",
+      "when": [
+        {
+          "measure": "quotesReceivedPerLike.ratio",
+          "direction": "high",
+          "minPercentile": 90
+        }
+      ]
+    },
+    {
+      "id": "goat.nature.answered",
+      "text": "Few pass it by without a word.",
+      "when": [
+        {
+          "measure": "repliesReceivedPerLike.ratio",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "goat.nature.head-on",
+      "text": "It meeteth every comer head-on.",
+      "when": [
+        {
+          "measure": "aloofness.replyShare",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    },
+    {
+      "id": "goat.nature.every-season",
+      "text": "It is heard upon the hill in every season, and will not be hushed.",
+      "when": [
+        {
+          "measure": "humour.phlegmatic.postsPerDay",
+          "direction": "high",
+          "minPercentile": 75
+        }
+      ]
+    }
+  ],
+  "gender": "f",
+  "art": {
+    "file": "goat.svg",
+    "anchors": {
+      "head": [
+        84,
+        74
+      ],
+      "shoulders": [
+        104,
+        104
+      ],
+      "mouth": [
+        50,
+        100
+      ]
+    },
+    "propScale": 0.85,
+    "pictures": {
+      "ghost": {
+        "image": "pictures/goat-ghost-image.jpg",
+        "cut": "pictures/goat-ghost-cut.png"
+      },
+      "vampire": {
+        "image": "pictures/goat-vampire-image.jpg",
+        "cut": "pictures/goat-vampire-cut.png"
+      },
+      "monstrous": {
+        "image": "pictures/goat-monstrous-image.jpg",
+        "cut": "pictures/goat-monstrous-cut.png"
+      }
+    }
+  }
+}
