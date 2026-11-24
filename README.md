@@ -1,5 +1,7 @@
 # X Bestiary
 
+The app is live here: https://studio.sonyasupposedly.com/hallowtide
+
 Turns an X handle into bestiary cards. [SPEC.md](SPEC.md) is the source of truth; this file only covers how to run what exists so far.
 
 ## What's built
